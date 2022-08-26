@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    /* Colors */
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --bg-color: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line-color: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+
+    /* Typography */
+    --ff: 'Outfit', sans-serif;
+    --fs-p: 18px;
+    --fw-1: 300;
+    --fw-2: 400;
+    --fw-3: 600;
+}
+
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    background-color: var(--bg-color);
+    font-family: var(--ff);
+    color: var(--white);
+    font-size: 1rem;
+}
+
+h3 {
+    color: var(--white);
+    font-size: 1rem;
+    padding-bottom: 0.9rem;
+}
+
+span {
+    color: var(--soft-blue);
+}
+
+.container {
+    width: 17rem;
+    height: 29rem;
+    margin: auto;
+    background-color: var(--card-bg);
+    border-radius: 0.6rem;
+    box-shadow: 5rem 10rem 3rem rgba(3, 6, 10, 0);
+}
+
+.main-image-div {
+    position: relative;
+    margin: 1rem;
+    background-color: var(--cyan);
+    border-radius: 0.6rem;
+}
+
+.main-image {
+    display: block;
+    width: 15rem;
+    border-radius: 0.5rem;
+}
+
+.view {
+    width: 2rem;
+    position: absolute;
+    top: 6.5rem;
+    left: 6.5rem;
+    z-index: -1;
+}
+
+
+.content {
+    padding: 0 1rem 1rem 1rem;
+}
+
+.content-detail {
+    font-size: 0.8rem;
+    font-weight: var(--fw-1);
+    color: var(--soft-blue);
+    /* border-bottom: 1px solid white; */
+}
+
+.price-time {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: var(--soft-blue);
+    padding-bottom: 1rem;
+    border-bottom: 1.5px solid var(--line-color);
+}
+
+.price-detail {
+    display: flex;
+    padding-top: 1rem;
+}
+
+.icon {
+    padding-right: 0.5rem;
+}
+
+.price {
+    color: var(--cyan);
+}
+
+.avtar {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    padding-left: 1rem;
+}
+
+.avtar-icon {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+}
+
+.avtar-image {
+    padding-right: 0.8rem;
+}
+
+.name {
+    color: var(--white);
+}
+
+.name:hover, h3:hover {
+    cursor: pointer;
+    color: var(--cyan);
+}
+
+.main-image:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.main-image-div:hover .view{
+    z-index: 1;
+    cursor: pointer;
+}
+
+@media screen and (max-width:600px) {
+    .container {
+        width: 19rem;
+        height: 33rem;
+        margin: auto;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .main-image {
+        display: block;
+        width: 17rem;
+    }
+
+    .view {
+        width: 2rem;
+        position: absolute;
+        top: 8rem;
+        left: 8rem;
+        z-index: -1;
+    }
+
+    .content-detail {
+        font-size: 0.9rem;
+        line-height: 1.3rem;
+    }
+
+    .price-detail {
+        padding-top: 1.2rem;
+    }
+
+    .price-time {
+        font-size: 0.9rem;
+        padding-bottom: 1.1rem;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution {
+    font-size: 11px; text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
